@@ -5,7 +5,8 @@ import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.Test;
 
 public class test1 {
-	public static WebDriver driver = new FirefoxDriver();
+	System.SetProperty("webdriver.chrome.driver", "C:\\Working\\Workspace\\SeleniumProject\\chromedriver.exe");
+	public static WebDriver driver = new ChromeDriver();
 		
 	@Test
 	public void testMethod0() {
