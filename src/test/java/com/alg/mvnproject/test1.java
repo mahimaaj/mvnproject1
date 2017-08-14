@@ -1,23 +1,25 @@
 package com.alg.mvnproject;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.Test;
 
 public class test1 {
-	System.setProperty("webdriver.chrome.driver", "C:\\Working\\Workspace\\SeleniumProject\\chromedriver.exe");
-		WebDriver driver = new ChromeDriver();
-		
-		
+	
+	public static WebDriver driver;
+	
+	
 	@Test
-	public void testMethod0() {
-		driver.get("https://www.google.ca");
-		System.out.println("########################");
-		System.out.println("Test pass");
+	
+	public void test(){
+		System.setProperty("webdriver.chrome.driver", "C:\\Working\\Workspace\\SeleniumProject\\chromedriver.exe");
+		driver = new ChromeDriver();
+		driver.get("https://www.google.com");
+		System.out.println("*******************");
+		System.out.println("Test Passed");
+		System.out.println("*******************");
 		driver.quit();
 	}
-	
 	@Test
 	public void testMethod1() {
 		System.out.println("########################");
@@ -25,7 +27,7 @@ public class test1 {
 		System.out.println("Test pass");
 		
 	}
-	
+
 	@Test
 	public void testMethod2() {
 		System.out.println("########################");
@@ -33,7 +35,7 @@ public class test1 {
 		System.out.println("Test pass");
 		
 	}
-	
+
 	@Test
 	public void testMethod3() {
 		System.out.println("########################");
@@ -41,7 +43,7 @@ public class test1 {
 		System.out.println("Test pass");
 		
 	}
-	
+
 	@Test
 	public void testMethod4() {
 		System.out.println("########################");
@@ -49,7 +51,7 @@ public class test1 {
 		System.out.println("Test pass");
 		
 	}
-	
+
 	@Test
 	public void testMethod5() {
 		System.out.println("########################");
@@ -57,7 +59,5 @@ public class test1 {
 		System.out.println("Test pass");
 		
 	}
-			
-			
-
+	
 }
